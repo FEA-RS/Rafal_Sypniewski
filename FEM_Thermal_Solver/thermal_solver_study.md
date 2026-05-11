@@ -17,7 +17,7 @@ This project implements a custom **Finite Element Method (FEM)** solver to analy
 \* Conductivity ( $k_x ,k_y$ ): $55\;\textrm{W/(m}\cdot \textrm{K)}$ .
 
 
-!\[Problem Geometry\](images/geometry\_setup.png)
+!\[Problem Geometry\](images/geometry_setup.png)
 
 
 \*Figure 1: Analyzed domain and boundary conditions.\*
