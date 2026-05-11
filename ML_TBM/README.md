@@ -22,6 +22,8 @@ The repository follows a strict modular structure to ensure reproducibility of t
 ### Results Visualization (Ground Truth)
 Kriging was selected as the primary method for calculating $V_{loss}$ due to its superior accuracy in reflecting real-world ground behavior compared to Gauss, Integration and Statystical metods.  
 
+![Ring_68_V_loss](./images/kriging_volume_ring_68.png) 
+
 Figure 1: Cross-section of Ring 68 showing the Kriging-based volume loss calculation ($V_{loss} = 0.261\%$). 
 
 ## Planned Architectures (Comparative Study)
