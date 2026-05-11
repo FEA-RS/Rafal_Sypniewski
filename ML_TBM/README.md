@@ -44,3 +44,6 @@ The research objective is to compare how different architectures handle limited 
 - [ ] **Current Phase:** Feature Engineering.
 - [ ] Model benchmarking & Hyperparameter optimization.
 - [ ] Comparative analysis of DL vs. Classical methods by statistical method like (RMSE, MAE, $R^2$) and model training time.
+
+## Project Structure
+* **`ML_TBM/scripts/`** – Actual Python implementation of the data pipeline (Extraction, Cleaning, and Geostatistics).
