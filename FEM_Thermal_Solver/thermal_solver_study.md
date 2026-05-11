@@ -17,7 +17,7 @@ This project implements a custom **Finite Element Method (FEM)** solver to analy
 \* Conductivity ( $k_x ,k_y$ ): $55\;\textrm{W/(m}\cdot \textrm{K)}$ .
 
 
-!\[Problem Geometry\](images/geometry_setup.png)
+![Problem Geometry](images/geometry_setup.png)
 
 
 \*Figure 1: Analyzed domain and boundary conditions.\*
@@ -149,7 +149,7 @@ A mesh convergence study was performed to ensure the solution's accuracy. The av
 **Final Configuration:** An element size of $0.005\textrm{m}$ (64 elements and 325 nodes for $L=13\textrm{cm}$ ) was chosen for the final simulation.
 
 
-!\[Discretized model\](images/discrete_model.png)
+![Discretized model](images/discrete_model.png)
 
 ```matlab
 %% Dyskretyzacja 
@@ -358,7 +358,7 @@ For the final design length of $13\textrm{cm}$ , the radiator successfully meets
 -  **Min Temperature:** $38.03^{\circ } \textrm{C}$ .   
 -  **Average at Edge B:** $38.06^{\circ } \textrm{C}$ .   
 
-!\[Steady\-state temperature distribution\](images/thermal_results.png)
+![Steady-state temperature distribution](images/thermal_results.png)
 
 
 Figure 3: Steady\-state temperature distribution
@@ -432,7 +432,7 @@ To verify the custom solver, the results were compared against professional **An
 The negligible difference confirms that the manual FEM implementation accurately represents the physical phenomenon.  
 
 
-!\[Temperature distribution comparison from Ansys\](images/ansys_verification.png)
+![Temperature distribution comparison from Ansys](images/ansys_verification.png)
 
 
 Figure 4: Temperature distribution comparison from Ansys. 
