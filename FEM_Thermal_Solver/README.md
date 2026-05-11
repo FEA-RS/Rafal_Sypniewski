@@ -17,7 +17,7 @@ Verified against **Ansys Steady-State Thermal** with a relative error of only **
 | :--- | :--- | :--- | :--- |
 | **Avg Temp at B** | 38.062°C | 38.065°C | **0.008%** |
 
-![Temperature Map](./results/temperature_map.png)
+![Temperature Map](./images/thermal_results.png)
 *Figure 1: Final temperature distribution for the optimized geometry.*
 
 ## 📂 Project Structure
