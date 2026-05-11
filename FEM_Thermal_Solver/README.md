@@ -24,4 +24,4 @@ Verified against **Ansys Steady-State Thermal** with a relative error of only **
 ## 📂 Project Structure
 * `thermal_2D.m` – Main solver script.
 * `thermal_solver_study.md` – Technical breakdown (exported from Live Editor).
-* `/docs/Technical_Report.pdf` – Full technical documentation.
+* `Technical_Report.pdf` – Full technical documentation.
