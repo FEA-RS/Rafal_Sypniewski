@@ -65,7 +65,7 @@ To ensure numerical stability, convergence tests were performed for both solvers
 
 ![Convergence Plots](images/convergence_study.png)
 
-*Figure 5: Stress convergence as a function of element count.*
+*Figure 5: Mesh Convergence study as a function of number of elements.*
 
 ---
 
