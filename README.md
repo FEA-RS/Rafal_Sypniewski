@@ -4,7 +4,7 @@ Mechanical Engineer specializing in bridging FEA simulations with Python/ML auto
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **CAE/FEA:** Ansys (Mechanical, ACP, Fluent), Abaqus, CalculiX, HyperWorks (HyperMesh).
 * **Programming:** Python (pandas, numpy, scikit-learn, xgboost, pytorch, matplotlib), MATLAB (Numerical Solvers, Symbolic Math, Visualization), SQL.
@@ -13,7 +13,7 @@ Mechanical Engineer specializing in bridging FEA simulations with Python/ML auto
 
 ---
 
-## 📂 Key Projects (Project Highlights)
+## Key Projects (Project Highlights)
 
 | Project | Technical Details | Tools | Resources |
 | :--- | :--- | :--- | :--- |
