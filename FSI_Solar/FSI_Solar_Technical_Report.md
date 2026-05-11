@@ -56,7 +56,7 @@ Pressure loads were mapped onto the structural mesh in ANSYS Mechanical.
 
 ![Stress Results](images/stress_map.png)
 
-*Figure 4: HMH stress concentration at the pillar base.*
+*Figure 4: HMH stress distribution under $47 \text{ m/s}$ wind load.*
 
 ---
 
