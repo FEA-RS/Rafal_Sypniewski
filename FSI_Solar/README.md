@@ -25,7 +25,7 @@ Analysis confirmed the structure remains in the elastic range under design loads
 | **Max Displacement** | $17.04 \text{ mm}$ | $\approx 30 \text{ mm}$ (Panel thickness) | **Rigid** |
 
 ![Stress Map](./images/stress_map.png) 
-*Figure 1: HMH stress distribution at the support post under $47 \text{ m/s}$ wind load.*
+*Figure 1: HMH stress distribution under $47 \text{ m/s}$ wind load.*
 
 ## 📂 Project Structure
 * `FSI_Solar_Technical_Report.md` – Detailed technical breakdown of the methodology.
