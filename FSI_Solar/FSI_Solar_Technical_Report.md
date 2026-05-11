@@ -5,7 +5,7 @@ This project analyzes the structural response of a ground-mounted photovoltaic (
 
 **Key Parameters**:
 * **Wind Velocity ($v$):** $47\text{ m/s}$ (peak gusts recorded in Poland).
-* **Structure Angle ($\alpha$):** $30^\circ$ tilt.
+* **Structure Angle ($\alpha$):** $35^\circ$ tilt.
 * **Analysis Type:** One-way Fluid-Structure Interaction (FSI).
 
 ![Problem Geometry](images/geometry_setup.png)
@@ -28,9 +28,11 @@ A semi-spherical domain was designed to allow for various wind attack angles.
 * **Mesh**: **Mosaic Meshing** with Hexcore technology to resolve gradients around the structure.
 
 ![CFD Mesh](images/cfd_mesh_1.png)
+
 *Figure 2: Representation of the computational domain using the Mosaic Mesh algorithm in a cross-section relative to the YZ plane.*
 
 ![CFD Mesh](images/cfd_mesh.png)
+
 *Figure 2: Computational domain and hybrid mesh refinement.*
 
 ---
@@ -41,6 +43,7 @@ The CFD simulation provided the pressure field required for structural analysis.
 * **Suction Zone**: Significant negative pressure of $-6363.89\text{ Pa}$ on post sides due to vortex shedding.
 
 ![Pressure Distribution](images/pressure_distribution.png)
+
 *Figure 3: Aerodynamic pressure distribution (windward and leeward).*
 
 ---
@@ -52,6 +55,7 @@ Pressure loads were mapped onto the structural mesh in ANSYS Mechanical.
 * **Max Displacement**: $17.04\text{ mm}$ in the X-axis, ensuring operational safety.
 
 ![Stress Results](images/stress_map.png)
+
 *Figure 4: HMH stress concentration at the pillar base.*
 
 ---
@@ -60,6 +64,7 @@ Pressure loads were mapped onto the structural mesh in ANSYS Mechanical.
 To ensure numerical stability, convergence tests were performed for both solvers. Mesh independence was achieved when the relative change in peak stress dropped below $1\%$.
 
 ![Convergence Plots](images/convergence_study.png)
+
 *Figure 5: Stress convergence as a function of element count.*
 
 ---
