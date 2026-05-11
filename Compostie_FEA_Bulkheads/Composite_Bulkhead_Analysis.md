@@ -15,8 +15,8 @@ The structure utilized a high-performance sandwich configuration:
 
 The Laminate model for the bulkheads was created as a symmetrical stackup of materials layered on top of each other.
 
-![ACP Setup](images/layup_definition.png)
-*Figure 1: Visualization of fiber orientation rosettes and the shell thickness map (Bulkheads: 21.2 mm vs. Hull: 5.3 mm).*
+![Laminate_Stackup](images/laminate_stackup.png)
+*Figure 1: Visualization of fiber symmetrical stackup of materials layered.*
 
 ### Advanced ACP Workflow Details
 * **Geometry Partitioning**: The hull and bulkheads were meticulously sliced into numerous individual faces to allow for local layup variations and precise fiber mapping.
@@ -24,7 +24,7 @@ The Laminate model for the bulkheads was created as a symmetrical stackup of mat
 * **Modeling Groups**: Organized the laminate into 5 main groups (P1-P5 Modeling Plies), enabling independent tracking of stress and failure for each bulkhead.
 
 ![ACP Setup](images/layup_definition.png)
-*Figure 1: Visualization of fiber orientation rosettes and the shell thickness map (Bulkheads: 21.2 mm vs. Hull: 5.3 mm).*
+*Figure 2: Visualization shell thickness map of numerical model (Bulkheads: 21.2 mm vs. Hull: 5.3 mm).*
 
 ---
 
@@ -33,17 +33,20 @@ To capture the boat's behavior without artificial stiffness from rigid constrain
 
 ### Scenario 1: Sudden Sharp Turn (Interdisciplinary Load Case)
 Based on CFD assumptions, a maneuver at $12\text{ m/s}$ with a 5-degree rotation was analyzed.
-* **Variant A**: Resultant load of **$2235\text{ N}$** on front pylons.
+* **Variant A**: Resultant load of **$2235\text{ N}$** and **$2143.9\text{ N}$** on front pylons.
 * **Variant B**: Resultant load of **$2148\text{ N}$** on the rear pylon.
 
-![Load Visualization](images/load_cases.png)
-*Figure 2: Boundary conditions and resultant force vectors derived from CFD data.*
+![Load Visualization](images/load_cases_1_A.png)
+*Figure 3: Boundary conditions and resultant force vectors derived from CFD data for Sudden Sharp Turn variant A.*
+
+![Load Visualization](images/load_cases_1_B.png)
+*Figure 4: Boundary conditions and resultant force vectors derived from CFD data for Sudden Sharp Turn variant B.*
 
 ### Scenario 2: Dynamic Slamming (Water Impact)
 Simulating a drop from height, where a pressure of **$40\text{ kPa}$** acts on a $0.58\text{ m}^2$ surface area of the hull.
 
-![Load Visualization](images/load_cases.png)
-*Figure 2: Boundary conditions and resultant force vectors derived from CFD data.*
+![Load Visualization](images/load_cases_2.png)
+*Figure 5: Boundary conditions for Dynamic Slamming.*
 
 ---
 
@@ -60,13 +63,13 @@ The project followed an iterative path, where each simulation result drove geome
 The first model utilized a uniform layup across the bulkheads. Results showed significant stress concentrations and an **Inverse Reserve Factor (IRF) exceeding 2.1**, indicating high failure risk in the central bulkhead region.
 
 ![Iteration 1 Results](images/iteration1_results.png)
-*Figure 2: Iteration 1 IRF map showing failure zones (IRF > 1.0).*
+*Figure 6: Iteration 1 IRF map showing failure zones (IRF > 1.0).*
 
 ### Iteration 2: Geometric Refinement
 In response to the failure zones, the geometry of the bulkheads was modified and 3 of them were new, and the stacking sequence was adjusted in Ansys ACP. While the overall stiffness improved, new stress concentrations appeared near the hoisting points due to the changed load paths.
 
 ![Iteration 2 Results](images/iteration2_results.png)
-*Figure 3: Iteration 2 IRF results following geometric modifications.*
+*Figure 7: Iteration 2 IRF results following geometric modifications.*
 
 ### Iteration 3: Final Design & Strategic Trade-offs
 In the final iteration, the bulkhead position was adjusted, and a small cantilever bulkhead was added in front of the helmsman.
@@ -74,13 +77,20 @@ In the final iteration, the bulkhead position was adjusted, and a small cantilev
 **The Engineering Decision**: Instead of introducing heavy additional bulkheads or another global carbon ply (which would compromise the boat's energy efficiency), the simulation phase was concluded with a pragmatic manufacturing plan. These coordinates were flagged for **local manual reinforcement** (carbon patches) during the vacuum bagging process.
 
 ![Final Results](images/iteration3_results.png)
-*Figure 4: Final Iteration 3 results identifying zones for local production reinforcement.*
-
----
-
-## 
+*Figure 8: Final Iteration 3 results identifying zones for local production reinforcement.*
 
 The final optimized design served as the **Layup Schedule** for the production team, ensuring that the physical lamination process accurately reflected the validated numerical model.
 
-## 6. Conclusion
-By integrating CFD-derived loads and utilizing advanced FEA techniques like **Inertia Relief** and **Ansys ACP**, I delivered a structure that balanced extreme safety requirements with racing performance. The successful racing season of the "Delta" boat validated both the numerical results and the strategic decision to use targeted local reinforcements.
+---
+
+## 5. Conclusion & Final Validation
+The structural analysis of the "Delta" solar boat bulkheads successfully integrated interdisciplinary data from **Ansys Fluent CFD** into a high-fidelity **Ansys ACP** model. By employing the **Inertia Relief** method, the simulation accurately captured the boat's response to extreme maneuvers and impacts without the risks of over-constraining the model.
+
+The iterative design process (Iterations 1-3) allowed for a precise optimization of the laminate. The strategic decision to finalize the simulation with a localized Inverse Reserve Factor slightly above 1.0 — and addressing it through **targeted manual reinforcements** instead of global thickening — proved to be the correct engineering trade-off. This approach maximized the boat's performance-to-weight ratio, which was a decisive factor during international regattas.
+
+The success of this "design-to-manufacture" cycle was confirmed by the flawless performance of the hull throughout the entire racing season, validating both the numerical assumptions and the production quality.
+
+![Finished Bulkheads](images/final_bulkhead.png)
+*Figure 5: Physical implementation of the optimized design - composite bulkheads during the final assembly stage.*
+
+
