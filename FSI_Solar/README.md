@@ -18,11 +18,11 @@ The model was verified through rigorous **mesh convergence tests** for both doma
 ## 📈 Key Results
 Analysis confirmed the structure remains in the elastic range under design loads.
 
-| Parameter | Result | Limit / Yield | Status |
-| :--- | :--- | :--- | :--- |
-| **Max Pressure (CFD)** | $1407.90 \text{ Pa}$ | N/A | Calculated |
-| **Max HMH Stress** | $205.68 \text{ MPa}$ | $250 \text{ MPa}$ ($R_e$) | **Safe (SF = 1.25)** |
-| **Max Displacement** | $17.04 \text{ mm}$ | $\approx 30 \text{ mm}$ (Panel thickness) | **Rigid** |
+| Parameter | Result | Limit | 
+| :--- | :--- | :--- |
+| **Max Pressure (CFD)** | $1407.90 \text{ Pa}$ | N/A | 
+| **Max HMH Stress** | $205.68 \text{ MPa}$ | 
+| **Max Displacement** | $17.04 \text{ mm}$ | 
 
 ![Stress Map](./images/stress_map.png) 
 *Figure 1: HMH stress distribution under $47 \text{ m/s}$ wind load.*
