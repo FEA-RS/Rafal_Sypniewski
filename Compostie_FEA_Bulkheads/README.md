@@ -1,27 +1,29 @@
 # Composite Structural Analysis — AGH Solar Boat Team
 
-##  Overview
-This project presents the structural design, numerical analysis, and optimization of composite bulkheads for the **"Delta"** solar racing boat. As a member of the **AGH Solar Boat Team** (Construction Section), I managed the full workflow: from high-fidelity composite modeling in **Ansys ACP** to verifying failure criteria for racing conditions.
+## Overview
+This project presents the structural design, numerical analysis, and optimization of composite bulkheads for the **"Delta"** solar racing boat. As a member of the **AGH Solar Boat Team** (Construction Section), I managed the complete engineering cycle: from interdisciplinary load definition (integrating **Ansys Fluent CFD** data) and advanced laminate modeling in **Ansys ACP**, to final manufacturing validation.
 
-### Verification:
-The composite structure was validated against extreme load cases using specialized criteria:
-* **Failure Theories**: Tsai-Wu and Puck criteria were applied to evaluate ply-by-ply integrity.
-* **Operational Cases**: Verified for boat hoisting (lifting straps) and hydrodynamic water pressure during racing.
+### Verification & Validation:
+The design was verified through a three-stage iterative optimization process against peak operational loads:
+* **Interdisciplinary Integration**: Loading conditions were derived directly from high-fidelity **Ansys Fluent CFD** simulations.
+* **Advanced Numerical Techniques**: Implemented the **Inertia Relief** method to capture the structural response in an unconstrained dynamic state (hoisting/slamming) without artificial constraint stiffness.
+* **Real-world Success**: The optimized structure survived multiple international regatta seasons, validating the numerical assumptions and production quality.
 
 ## Engineering Details
 * **Organization**: AGH Solar Boat Team (Section: Construction).
-* **Software**: Ansys ACP (Composite PrepPost), Ansys Mechanical, SolidWorks.
-* **Materials**: Carbon Fiber Reinforced Polymer (CFRP) – sandwich structure with a foam core.
-* **Key Skills**: Rosette definition, selection rules, selection groups, selection stacking, and composite post-processing.
+* **Software**: Ansys ACP (Composite PrepPost), Ansys Mechanical, Ansys Fluent, SolidWorks.
+* **Materials**: CFRP sandwich structure — Biaxial Carbon Fiber T800 (150 gsm) + Cascell 50 RS PVC Foam core.
+* **ACP Workflow**: Precise ply-by-ply modeling using **Rosettes**, **Oriented Selection Sets (OSS)**, and **Modeling Groups** for fiber orientation control ($0^\circ, 90^\circ, \pm45^\circ$).
 
 ## Key Results
-* **Failure Index**: Maximum Tsai-Wu index reached **0.42**, confirming a high safety margin (target < 1.0).
-* **Weight Optimization**: Successfully reduced composite layers in low-stress zones, decreasing overall weight without compromising stiffness.
-* **Manufacturing Support**: Simulation results directly determined the final layup schedule used in the vacuum bagging process.
+* **Optimal Safety**: Successfully identified and resolved high-risk zones (initial **IRF > 2.1**) through geometric refinement and laminate adjustment.
+* **Strategic Trade-off**: Optimized the performance-to-weight ratio by addressing localized failure risks (IRF slightly above 1.0) with **targeted manual reinforcements** instead of adding global weight.
+* **Design-to-Manufacture**: The simulation results served as the final **Layup Schedule** for the vacuum bagging production process, ensuring the physical boat matched the validated numerical model.
 
-![Failure Analysis](./images/failure_results.png) 
-*Figure 1: Tsai-Wu failure index distribution across critical composite plies.*
+![Final Bulkhead](./images/final_bulkhead.png) 
+*Figure 1: Physical implementation of the optimized design — composite bulkheads installed in the "Delta" hull with the AGH Solar Boat Team.*
 
 ## Project Structure
-* `Composite_Bulkhead_Analysis.md` – Detailed technical report on the ACP workflow and structural results.
-* `Modelowanie i symulacja kompozytów w Ansys ACP.pdf` – **Technical Case Study & Workflow**: A comprehensive guide covering the end-to-end composite simulation process for high-performance racing applications.
+* `Composite_Bulkhead_Analysis.md` – Detailed technical report covering the iterative optimization and ACP workflow.
+* `Modelowanie i symulacja kompozytów w Ansys ACP.pdf` – **Technical Workflow Guide**: Comprehensive breakdown of composite modeling techniques.
+* `analiza strukturalna grodzi kompozytowych w łodzi Delta.pdf` – **Project Case Study**: Full structural report including load scenarios and manufacturing results.
