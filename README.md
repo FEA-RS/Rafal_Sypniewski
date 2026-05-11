@@ -23,6 +23,6 @@ I specialize in bridging the gap between **Classical Finite Element Analysis** a
 | **Composite FEA simulation of Bulkheads** | Structural optimization of bulkhead systems for racing boats. Implemented complex **laminate layups** and sandwich structures using **Ansys ACP** to maximize stiffness-to-weight ratio. | Ansys ACP, Fusion 360 | [Explore](./Composite_FEA_Bulkheads/) |
 | **Wind-Load FSI Analysis** | Coupled **Fluid-Structure Interaction (FSI)** simulations. Mapping pressure fields from **Ansys Fluent** to mechanical structures to evaluate stress and SF under extreme wind conditions. | Ansys Fluent, Ansys Mechanical | [Explore](./FSI_Solar/) |
 
----
+--- 
 
 **Contact:** rafaloficial@gmail.com | [LinkedIn Profile](https://www.linkedin.com/in/rafał-sypniewski-3b0a00253) | Kraków, PL
