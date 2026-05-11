@@ -24,7 +24,7 @@ Analysis confirmed the structure remains in the elastic range under design loads
 | **Max HMH Stress** | $205.68 \text{ MPa}$ | $250 \text{ MPa}$ ($R_e$) | **Safe (SF = 1.25)** |
 | **Max Displacement** | $17.04 \text{ mm}$ | $\approx 30 \text{ mm}$ (Panel thickness) | **Rigid** |
 
-![Stress Map](./images/fsi_stress_results.png) 
+![Stress Map](./images/stress_map.png) 
 *Figure 1: HMH stress distribution at the support post under $47 \text{ m/s}$ wind load.*
 
 ## 📂 Project Structure
