@@ -30,7 +30,7 @@ Figure 1: Cross-section of Ring 68 showing the Kriging-based volume loss calcula
 The research objective is to compare how different architectures handle limited engineering datasets:
 * **Baseline:** Multiple Linear Regression (MLR).
 * **Ensemble:** Random Forest & XGBoost (Optimized for tabular data).
-* **Deep Learning:** - **TCN (Temporal Convolutional Networks):** Selected over LSTM for better gradient stability and efficient long-term dependency mapping in time-series telemetry.
+* **Deep Learning:** - **LSTM** - dependency mapping in time-series telemetry.
 
 ## Tech Stack
 * **Language:** Python 3.10+
