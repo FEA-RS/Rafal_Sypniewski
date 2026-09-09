@@ -74,7 +74,7 @@ Chronological split (no shuffling — this is a spatio-temporal process): **trai
    ML_TBM/
    ├── figures/   # Model prediction plots, correlation matrix, DB schema
    ├── reports/   # Generated text reports per pipeline stage
-   └── scripts/   # (do przywrócenia) — ETL → geostatystyka → feature engineering → modele
+   └── scripts/   # ETL → geostatistics → feature engineering → modeling
 ```
 
 ## Limitations & Future Work
