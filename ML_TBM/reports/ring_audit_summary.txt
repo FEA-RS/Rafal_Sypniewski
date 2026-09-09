@@ -1,0 +1,7 @@
+AUDYT OKNA OBLICZENIOWEGO
+Zasieg podluzny: [-13.0, 19.5] m
+Zasieg poprzeczny: +/- 32.5 m
+------------------------------
+Liczba ringów: 285
+Ringi z min. 4 pkt w SAFE: 285 (100.0%)
+Srednia liczba pkt/ring (SAFE): 16.8

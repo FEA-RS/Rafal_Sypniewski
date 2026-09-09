@@ -1,0 +1,2 @@
+=== RAPORT METODOLOGICZNY ML - XGBOOST (STABILNY) ===
+Zoptymalizowane hiperparametry: {'colsample_bytree': 0.85, 'learning_rate': 0.2, 'max_depth': 3, 'min_child_weight': 3, 'n_estimators': 100, 'reg_lambda': 2.0, 'subsample': 1.0}

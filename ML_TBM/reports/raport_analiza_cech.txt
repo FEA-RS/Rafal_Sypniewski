@@ -1,0 +1,38 @@
+==================================================
+   RAPORT Z DIAGNOSTYKI I SELEKCJI CECH (PODEJŚCIE A)
+==================================================
+
+Liczba ringów po fuzji baz: 285
+Liczba cech na starcie: 15
+
+[1] WYKRYTE SILNE KORELACJE (R > 0.85):
+   - Cecha 'thrust_range' jest krytycznie skorelowana z: ['thrust_avg']
+--> Usunięte kolumny z powodu korelacji (1): ['thrust_range']
+
+[2] ANALIZA SPARSITY WARSTW GEOLOGICZNYCH:
+   - soil_VIC: obecna na 155 ringach (54.4%)
+   - soil_VIIA: obecna na 56 ringach (19.6%)
+   - soil_VIF: obecna na 252 ringach (88.4%)
+   - soil_VIIB: obecna na 113 ringach (39.6%)
+   - soil_VC: obecna na 56 ringach (19.6%)
+   - soil_VB: obecna na 20 ringach (7.0%)
+--> Scalone rzadkie warstwy (<5%): []
+
+==================================================
+PODSUMOWANIE: Liczba cech po odchudzeniu: 14
+==================================================
+Ostateczna lista cech wejściowych dla modeli ML:
+ - epb_avg
+ - epb_range
+ - torque_avg
+ - torque_range
+ - thrust_avg
+ - grout_ratio
+ - total_foam_vol
+ - total_bentonite_vol
+ - soil_VIC
+ - soil_VIIA
+ - soil_VIF
+ - soil_VIIB
+ - soil_VC
+ - soil_VB

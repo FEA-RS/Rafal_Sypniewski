@@ -1,0 +1,33 @@
+=== RAPORT METODOLOGICZNY ML - REGRESJA LINIOWA (STANDARYZOWANA) ===
+Data wygenerowania raportu: 2026-08-12 14:39:23
+--------------------------------------------------
+Czas treningu finalnego (Final Fit Time): 0.0168 sekundy
+--------------------------------------------------
+WYRAZ WOLNY (BIAS / INTERCEPT b): 0.0815 %
+
+ESTYMOWANE WSPÓ£CZYNNIKI STANDARYZOWANE (BETA):
+ Parametr (Cecha X)  Wspó³czynnik standaryzowany (Beta)
+     total_foam_vol                            0.025025
+           soil_VIF                           -0.024064
+       torque_range                            0.019332
+            soil_VC                           -0.014360
+          soil_VIIA                           -0.010252
+            epb_avg                           -0.009698
+          epb_range                            0.008814
+           soil_VIC                           -0.008208
+         thrust_avg                            0.007745
+total_bentonite_vol                           -0.006735
+          soil_VIIB                            0.006585
+            soil_VB                            0.005576
+        grout_ratio                            0.005343
+         torque_avg                            0.000863
+--------------------------------------------------
+METRYKI B£ÊDU:
+  [TRAIN] MAE:  0.0325 %
+  [TEST]  MAE:  0.0252 %
+  [TRAIN] RMSE: 0.0406 %
+  [TEST]  RMSE: 0.0348 %
+  [TRAIN] RMAE: 39.8755 %
+  [TEST]  RMAE: 96.9402 %
+  [TRAIN] R2:   0.6767
+  [TEST]  R2:   -0.0402

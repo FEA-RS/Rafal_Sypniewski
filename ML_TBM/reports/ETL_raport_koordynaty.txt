@@ -1,0 +1,26 @@
+--- RAPORT Z PRZETWARZANIA KOORDYNATÓW ---
+Data wygenerowania: 2026-03-06 15:21:25
+
+Wczytano czujników z pliku surowego: 3277
+Zapisano czujników do pliku końcowego: 3277
+Znaleziono czujników z zerowymi współrzędnymi (0,0): 18
+
+Lista czujników bez współrzędnych:
+ - 3L_D_A
+ - 3L_D_C
+ - 3L_D_E
+ - 3P_D_A
+ - 3P_D_C
+ - 3P_D_E
+ - 4L_D_A
+ - 4L_D_D
+ - 4L_D_E
+ - 4P_D_A
+ - 4P_D_C
+ - 4P_D_D
+ - 4P_D_E
+ - 5L_D_A
+ - 5L_D_B
+ - 5P_D_A
+ - 5P_D_B
+ - 5P_D_D

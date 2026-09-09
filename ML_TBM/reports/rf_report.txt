@@ -1,0 +1,31 @@
+=== RAPORT METODOLOGICZNY ML - RANDOM FOREST REGRESSOR ===
+Data wygenerowania raportu: 2026-06-22 14:36:56
+--------------------------------------------------
+Zoptymalizowane hiperparametry: {'max_depth': 8, 'min_samples_split': 2, 'n_estimators': 72}
+Czas ³¹cznej optymalizacji (Tuning Time): 5.0879 sekundy
+Czas treningu ostatecznego (Final Fit Time): 0.0735 sekundy
+--------------------------------------------------
+WBUDOWANA ISTOTNOŒÆ CECH (GINI IMPORTANCE):
+ Parametr (Cecha X)  Znaczenie Gini
+           soil_VIF        0.440431
+           soil_VIC        0.226481
+     total_foam_vol        0.136110
+          soil_VIIB        0.051524
+          epb_range        0.025521
+            epb_avg        0.024023
+         thrust_avg        0.018570
+        grout_ratio        0.017661
+       torque_range        0.016880
+total_bentonite_vol        0.016196
+         torque_avg        0.015198
+          soil_VIIA        0.010912
+            soil_VC        0.000485
+            soil_VB        0.000008
+--------------------------------------------------
+METRYKI B£ÊDU:
+  [TRAIN] MAE:  0.0073 %
+  [TEST]  MAE:  0.0178 %
+  [TRAIN] RMSE: 0.0108 %
+  [TEST]  RMSE: 0.0339 %
+  [TRAIN] R2:   0.9772
+  [TEST]  R2:   0.0143

@@ -1,0 +1,3 @@
+SUKCES!
+Wyeksportowano ringi TBM: 285 wierszy -> D:\%PRACA_MAGISTERSKA\data\interim\tbm_features_ring.parquet
+Wyeksportowano odczyty: 1317136 wierszy -> D:\%PRACA_MAGISTERSKA\data\interim\sensors_readings_spatial.parquet

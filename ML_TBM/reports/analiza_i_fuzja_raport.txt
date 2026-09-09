@@ -1,0 +1,27 @@
+============================================================
+   URUCHAMIAM DIAGNOSTYKĘ I FUZJĘ DANYCH (PODEJŚCIE A)
+============================================================
+-> Pomyślnie połączono bazy. Liczba ringów: 285
+
+[1] ANALIZA KORELACJI SPEARMANA (Próg R > 0.85):
+   - Cecha 'thrust_range' jest krytycznie skorelowana z: ['thrust_avg']
+
+[2] ANALIZA WARSTW GEOLOGICZNYCH (SPARSITY):
+   - soil_VIC: obecna na 155 ringach (54.4%)
+   - soil_VIIA: obecna na 56 ringach (19.6%)
+   - soil_VIF: obecna na 252 ringach (88.4%)
+   - soil_VIIB: obecna na 113 ringach (39.6%)
+   - soil_VC: obecna na 56 ringach (19.6%)
+   - soil_VB: obecna na 20 ringach (7.0%)
+
+==================================================
+   PODSUMOWANIE ANALIZY - CO SUGERUJE MATEMATYKA?
+==================================================
+Wszystkich cech na starcie: 15
+Sugerowane cechy maszyny do USUNIĘCIA (R > 0.85): ['thrust_range']
+Sugerowane rzadkie geologie do SCALENIA (< 5% ringów): []
+
+[WYNIK] Po odchudzeniu w zbiorze A zostaje: 14 cech.
+Ostateczna lista cech (Podejście A):
+['epb_avg', 'epb_range', 'torque_avg', 'torque_range', 'thrust_avg', 'grout_ratio', 'total_foam_vol', 'total_bentonite_vol', 'soil_VIC', 'soil_VIIA', 'soil_VIF', 'soil_VIIB', 'soil_VC', 'soil_VB']
+==================================================

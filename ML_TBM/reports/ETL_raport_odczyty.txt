@@ -1,0 +1,8 @@
+--- RAPORT ETL: TYLKO R, BZ, BX, BY ---
+Data wygenerowania: 2026-03-31 23:31:31
+--------------------------------------------------
+Przetworzone pliki: 217
+Arkusze pasujące (R/BZ/BX/BY): 2375
+Arkusze zignorowane (inne typy): 3917
+Odrzucone puste/błędne wiersze: 0
+NOWE REKORDY DO SQL: 3794920

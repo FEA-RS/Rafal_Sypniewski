@@ -1,0 +1,8 @@
+RAPORT INTERPOLACJI MONITORINGU
+========================================
+Liczba czujników: 880
+Srednia luka pomiarowa: 238.99 dni
+Najdluzsza luka: 1033 dni
+Pokrycie FULL: 100.0%
+Pokrycie SAFE (limit 0d): 10.6%
+Utrata danych w SAFE: 89.4%
