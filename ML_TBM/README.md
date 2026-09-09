@@ -19,7 +19,7 @@ Instead of the commonly used maximum point settlement $s_{max}$ (highly sensitiv
 ## Methodology
 
 ### 1. Data pipeline (ETL)
-Raw geodetic sheets and TBM PLC exports → coordinate system unification (PL-2000 → WGS84) → PostgreSQL structuring → Parquet export. See `results/reports/etl_report_*.txt`, `results/reports/parquet_conversion_report.txt`.
+Raw geodetic sheets and TBM PLC exports → coordinate system unification (PL-2000 → WGS84) → PostgreSQL structuring → Parquet export. See `reports/ETL_raport_koordynaty.txt`, `reports/parquet_raport.txt`.
 
 ![ERD Diagram](./figures/sql_schema.png)
 *Figure: Relational schema (ERD) of the PostgreSQL database — `tbm_telemetry`, `monitoring_readings`, `sensors_metadata`.*
@@ -53,7 +53,7 @@ Chronological split (no shuffling — this is a spatio-temporal process): **trai
 | XGBoost (tuned) | 0.005 | 0.994 | 0.032 | 0.099 |
 | **LSTM** (best of 12 runs) | 0.032 | 0.797 | **0.029** | **0.272** |
 
-![Model comparison](./figures/lstm_predictions_plot_v11.png)
+![Model comparison](./figures/lstm_REPRODUCED_v11.png)
 *Figure: Chronological prediction response — LSTM vs. ground truth ($V_{loss}$), train/test split at ring 225.*
 <!-- TODO: point this at whichever run (v1–v12) matches your final reported metrics if it's not v11 -->
 
@@ -71,12 +71,10 @@ Chronological split (no shuffling — this is a spatio-temporal process): **trai
 
 ## Project Structure
 ```
-scripts/                # Full pipeline: ETL → geostatistics → feature engineering → modeling
-results/
-├── figures/
-│      # Final model results only: per-method Vloss comparison,
-│      # correlation matrix, and final prediction plots (Baseline/RF/XGBoost/LSTM)
-└── reports/  # Generated text reports per pipeline stage (ETL, feature analysis, model metrics)
+   ML_TBM/
+   ├── figures/   # Model prediction plots, correlation matrix, DB schema
+   ├── reports/   # Generated text reports per pipeline stage
+   └── scripts/   # (do przywrócenia) — ETL → geostatystyka → feature engineering → modele
 ```
 
 ## Limitations & Future Work
