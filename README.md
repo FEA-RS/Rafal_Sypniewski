@@ -24,7 +24,7 @@ I specialize in bridging the gap between **Classical Finite Element Analysis** a
 | **High-Order FEM Thermal Solver** | Built a steady-state thermal solver from scratch using **9-node quadrilateral elements**. Includes manual **Global Stiffness Matrix** assembly. Verified vs. Ansys with a relative error of **0.008%**. | MATLAB, Ansys Mechanical | [Explore](./FEM_Thermal_Solver/) |
 | **Composite FEA simulation of Bulkheads** | Structural optimization of bulkhead systems for racing boats. Implemented complex **laminate layups** and sandwich structures using **Ansys ACP** to maximize stiffness-to-weight ratio. | Ansys ACP, Fusion 360 | [Explore](./Composite_FEA_Bulkheads/) |
 | **Wind-Load FSI Analysis** | Coupled **Fluid-Structure Interaction (FSI)** simulations. Mapping pressure fields from **Ansys Fluent** to mechanical structures to evaluate stress and SF under extreme wind conditions. | Ansys Fluent, Ansys Mechanical | [Explore](./FSI_Solar/) |
-| **Open-Source FSI Workflow** | The same wind-load FSI case rebuilt with **open-source tools only**: OpenFOAM meshing and CFD (snappyHexMesh, simpleFoam, k-ω SST) on Linux with an 8-core MPI run, pressure mapped onto a **CalculiX** model. InclDocuments known limitations and next steps. | OpenFOAM, CalculiX/PrePoMax, ParaView, FreeCAD | [Explore](./FSI_OpenSource/) |
+| **Open-Source FSI Workflow** | The same wind-load FSI case rebuilt with **open-source tools only**: OpenFOAM meshing and CFD (snappyHexMesh, simpleFoam, k-ω SST) on Linux with an 8-core MPI run, pressure mapped onto a **CalculiX** model. Documents known limitations and next steps. | OpenFOAM, CalculiX/PrePoMax, ParaView, FreeCAD | [Explore](./FSI_OpenSource/) |
 
 --- 
 
