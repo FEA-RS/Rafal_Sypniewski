@@ -102,16 +102,6 @@ The project focused on mastering the open-source toolchain, so several simplific
 * **Add prism layers** (`addLayers true`) and check $y^+$ near the walls.
 * **Run a mesh-independence study**, as done in the Ansys version of the case.
 
-### Indicative comparison with the Ansys workflow
-Both workflows model the same structure and gust, but differ in domain, mesh, wall treatment and structural modelling, so the comparison is indicative only:
-
-| Quantity | Ansys Fluent → Mechanical | OpenFOAM → CalculiX |
-| :--- | :--- | :--- |
-| Peak pressure on structure | $1408\ \text{Pa}$ | ≈1400–1500 (kinematic, m²/s²) |
-| Max displacement | $17.0\ \text{mm}$ | $13.5\ \text{mm}$ |
-
-The lower displacement of the open-source case is consistent with the missing density factor in point 1 – a good example of why unit and reference-pressure checks belong in every cross-tool workflow.
-
 ## Takeaways
 * Open-source CAE is a capable alternative to commercial tools, with a higher entry threshold.
 * Working directly with input dictionaries gives full control over – and understanding of – every modelling decision.
