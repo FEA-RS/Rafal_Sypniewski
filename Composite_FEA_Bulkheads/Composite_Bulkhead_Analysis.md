@@ -1,7 +1,7 @@
-# Technical Report: Advanced Structural Analysis & Optimization of Composite Bulkheads
+# Technical Report: Structural Analysis of Composite Bulkheads
 
 ## 1. Project Overview & Interdisciplinary Integration
-This project focuses on the structural design and numerical verification of the internal bulkhead system for the **"Delta" solar racing boat**. As a member of the **AGH Solar Boat Team**, I led the structural analysis division, working in close integration with the **CFD team**. 
+This project focuses on the structural design and numerical verification of the internal bulkhead system for the **"Delta" solar racing boat**. As a member of the **AGH Solar Boat Team**, I was responsible for the geometry, placement and laminate definition of the bulkheads and their structural verification, working with the team's **CFD** and composite specialists. The sandwich materials were selected within the team.
 
 The loading conditions used in this FEA model were derived directly from high-fidelity **Ansys Fluent CFD simulations**, ensuring that the structural response reflects actual hydrodynamic pressures and aerodynamic forces encountered during racing.
 
@@ -87,19 +87,17 @@ In the final iteration, the bulkhead position was adjusted, and a small cantilev
 
 *Figure 8: Final Iteration 3 results identifying zones for local production reinforcement.*
 
-The final optimized design served as the **Layup Schedule** for the production team, ensuring that the physical lamination process accurately reflected the validated numerical model.
+The final optimized design served as the **Layup Schedule** for the production team, so that the physical lamination followed the verified numerical model.
 
 ---
 
 ## 5. Conclusion & Final Validation
 The structural analysis of the "Delta" solar boat bulkheads successfully integrated interdisciplinary data from **Ansys Fluent CFD** into a high-fidelity **Ansys ACP** model. By employing the **Inertia Relief** method, the simulation accurately captured the boat's response to extreme maneuvers and impacts without the risks of over-constraining the model.
 
-The iterative design process (Iterations 1-3) allowed for a precise optimization of the laminate. The strategic decision to finalize the simulation with a localized Inverse Reserve Factor slightly above 1.0 — and addressing it through **targeted manual reinforcements** instead of global thickening — proved to be the correct engineering trade-off. This approach maximized the boat's performance-to-weight ratio, which was a decisive factor during international regattas.
-
-The success of this "design-to-manufacture" cycle was confirmed by the flawless performance of the hull throughout the entire racing season, validating both the numerical assumptions and the production quality.
+The iterative design process (Iterations 1-3) progressively improved the laminate and the bulkhead layout. The joint team decision to conclude the simulation phase with a localized Inverse Reserve Factor slightly above 1.0 — and to address it through **targeted manual reinforcements** instead of global thickening — kept the structure light, which matters for the energy efficiency of a solar boat.
 
 ![Finished Bulkheads](images/final_bulkhead.png)
 
-*Figure 9: Physical implementation of the optimized design - composite bulkheads during the final assembly stage with our AGH Solar Boat Team.*
+*Figure 9: Composite bulkheads during the final assembly stage with our AGH Solar Boat Team.*
 
 
